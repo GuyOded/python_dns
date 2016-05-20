@@ -15,7 +15,9 @@ class DatabaseReader(object):
         """
         :param domain_name: the name that the caller wishes to find
         :type domain_name: str
-        :rtype: bool
+        :rtype: dns_entry.DnsEntry
+        :return: None if the requested domain name is not Found or an entry
+                 if it was
         opens for reading
         """
 

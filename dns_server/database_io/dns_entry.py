@@ -50,3 +50,8 @@ class DnsEntry(object):
         return dns_entry._name == self._name and \
             dns_entry._addr == self._addr and \
             dns_entry._dns_type == self._dns_type
+
+    """
+    implementing an __str__ slot breaks the single responsibility
+    principle that should never be broken
+    """
